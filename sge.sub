@@ -11,3 +11,6 @@ id
 
 source /opt/intel/compilers_and_libraries_2016/linux/mpi/intel64/bin/mpivars.sh
 
+#mpirun -n 32 ./hello.exe
+
+mpirun -n 32 /opt/intel/compilers_and_libraries_2016.3.223/linux/mpi/intel64/bin/IMB-MPI1
