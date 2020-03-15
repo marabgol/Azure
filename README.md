@@ -1,7 +1,7 @@
 # Azure
 
 
-source  /opt/intel/compilers_and_libraries_2018/linux/bin/compilervars.sh intel64 
+source  /opt/intel/compilers_and_libraries_2018/linux/bin/compilervars.sh intel64
 source  /opt/intel/compilers_and_libraries_2018/linux/mpi/intel64/bin/mpivars.sh 
 
 mpircc hello.c -o hello.exe
