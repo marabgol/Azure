@@ -1,0 +1,13 @@
+#!/bin/bash 
+#$ -cwd 
+#$ -N Hello_from 
+#$ -e Hello_from.e$JOB_ID.err 
+#$ -o Hello_from.e$JOB_ID.out 
+##$ -pe mpi 4 
+#$ -pe mpislots 32 
+##$ -pe make 32 
+echo  `hostname` 
+id 
+
+source /opt/intel/compilers_and_libraries_2016/linux/mpi/intel64/bin/mpivars.sh
+
