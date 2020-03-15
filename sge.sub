@@ -10,6 +10,9 @@ echo  `hostname`
 id 
 
 source /opt/intel/compilers_and_libraries_2016/linux/mpi/intel64/bin/mpivars.sh
+export I_MPI_FABRICS=shm:dapl
+export I_MPI_DAPL_PROVIDER=ofa-v2-ib0
+export I_MPI_DYNAMIC_CONNECTION=0
 
 #mpirun -n 32 ./hello.exe
 
