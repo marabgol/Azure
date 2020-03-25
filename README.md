@@ -22,3 +22,4 @@ export I_MPI_DYNAMIC_CONNECTION=0
 
 mpirun -genvall -host IP1,IP2   -perhost 1 -np 2 /opt/intel/compilers_and_libraries_2016/linux/mpi/intel64/bin/IMB-MPI1 -off_cache -1 BiBand
 
+mpirun -genvall -host 10.0.1.8,10.0.1.10 -perhost 1 -np 2 /opt/intel/compilers_and_libraries_2016/linux/mpi/intel64/bin/IMB-MPI1 PingPong Allreduce
