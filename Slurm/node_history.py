@@ -48,7 +48,7 @@ while True:
                 dict1[host][3]= partition
                 dict1[host][4]= date 
         for key, value in dict1.items():
-            if dict2[key][1] != dict1[key][1] or dict2[key][2] != dict1[key][2] or dict2[key][3] != dict1[key][3]:
+            if dict2[key][1] != dict1[key][1] or dict2[key][2] != dict1[key][2] or dict2[key][0] != dict1[key][0]:
                 dict2[key][0] = dict1[key][0]
                 dict2[key][1] = dict1[key][1]
                 dict2[key][2] = dict1[key][2]
