@@ -10,7 +10,7 @@
 import sys, os
 
 Slurm_version = os.popen(" rpm -qi slurm |grep RPM ").read()
-Slurm1 = Slurm_version.split( ).split(".")
+Slurm1 = Slurm_version.split( )[3].split(".")
 Slurm2 = Slurm1[0].split('-')[1]
 Slurm = Slurm2+"-"+Slurm1[1]+"-"+Slurm1[2]
 
